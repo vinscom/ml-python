@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+__pycache__
+.vscode
+glove.6B.100d.txt
+training_cleaned.csv
+word-embedding-example/newmode2.tf

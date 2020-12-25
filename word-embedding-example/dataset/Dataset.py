@@ -20,7 +20,7 @@ class DataSet:
         if shuffle:
             random.shuffle(self.corpus)
         print('Loading Dataset Finished')
-        return [s[0] for s in self.corpus], [int(s[1]) for s in self.corpus]
+        return [s[0] for s in self.corpus], [0 if "0" == s[1] else 1 for s in self.corpus]
 
     def training(self, **kwargs):
         sentences, labels = self.load(**kwargs)
